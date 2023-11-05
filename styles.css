@@ -1,4 +1,6 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+@import "https://fonts.googleapis.com/css?family=Spartan:300, 400, 700&display=swap";
+@import url("https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -6,9 +8,24 @@
 }
 html {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spartan", sans-serif;
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff6b6b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 136, 136);
+}
+
 a {
   text-decoration: none;
 }
@@ -29,7 +46,7 @@ p {
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.05rem;
 }
 
@@ -84,7 +101,6 @@ p {
   color: #ff6b6b;
 }
 
-/* Header section */
 #header {
   position: fixed;
   z-index: 1000;
@@ -209,9 +225,7 @@ p {
 #header .hamburger.active .bar::after {
   top: 0;
 }
-/* End Header section */
 
-/* Hero Section */
 #hero {
   background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=2620&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
@@ -237,6 +251,7 @@ p {
   justify-content: flex-start;
 }
 #hero h1 {
+  font-weight: 600;
   display: block;
   width: fit-content;
   font-size: 4rem;
@@ -256,13 +271,14 @@ p {
   animation-delay: 3s;
 }
 #hero h1 span {
+  font-weight: 300;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 0;
   background-color: #ff6b6b;
-  animation: text_reveal_box 1s ease;
+  animation: text_reveal_box 0.7s ease;
   animation-delay: 0.5s;
 }
 #hero h1:nth-child(1) span {
@@ -275,9 +291,6 @@ p {
   animation-delay: 2.5s;
 }
 
-/* End Hero Section */
-
-/* Services Section */
 #services .services {
   flex-direction: column;
   text-align: center;
@@ -337,9 +350,7 @@ p {
   color: white;
   text-align: left;
 }
-/* End Services Section */
 
-/* Projects section */
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
@@ -410,9 +421,7 @@ p {
 #projects .project-item:hover .project-img img {
   transform: scale(1.1);
 }
-/* End Projects section */
 
-/* About Section */
 #about .about {
   flex-direction: column-reverse;
   text-align: center;
@@ -458,11 +467,9 @@ p {
   border: 7px solid #ff6b6b;
   z-index: -1;
 }
-/* End About Section */
 
-/* Footer */
 #footer {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: url("https://images.unsplash.com/photo-1644074992646-47d68f8afb5c?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vdGVyfGVufDB8fDB8fHww");
 }
 #footer .footer {
   min-height: 200px;
@@ -470,6 +477,7 @@ p {
   padding-top: 50px;
   padding-bottom: 10px;
 }
+
 #footer h2 {
   color: white;
   font-weight: 500;
@@ -498,19 +506,7 @@ p {
   color: white;
   font-size: 1.3rem;
 }
-/* End Footer */
 
-/* Keyframes */
-@keyframes hamburger_puls {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.4);
-  }
-}
 @keyframes text_reveal_box {
   50% {
     width: 100%;
@@ -532,9 +528,7 @@ p {
     font-weight: 500;
   }
 }
-/* End Keyframes */
 
-/* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
@@ -544,20 +538,16 @@ p {
     font-size: 6rem;
   }
 
-  /* Hero */
   #hero h1 {
     font-size: 7rem;
+    font-weight: 800;
   }
-  /* End Hero */
 
-  /* Services Section */
   #services .service-bottom .service-item {
     flex-basis: 45%;
     margin: 2.5%;
   }
-  /* End Services Section */
 
-  /* Project */
   #projects .project-item {
     flex-direction: row;
   }
@@ -576,9 +566,7 @@ p {
   #projects .all-projects .project-img {
     height: 100%;
   }
-  /* End Project */
 
-  /* About */
   #about .about {
     flex-direction: row;
   }
@@ -601,47 +589,9 @@ p {
   #about .col-right h1 {
     text-align: left;
   }
-  /* End About */
-
-  /* contact  */
-  #contact .contact {
-    flex-direction: column;
-    padding: 100px 0;
-    align-items: center;
-    justify-content: center;
-    min-width: 20vh;
-  }
-  #contact .contact-items {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0;
-  }
-  #contact .contact-item {
-    width: 30%;
-    margin: 0;
-    flex-direction: row;
-  }
-  #contact .contact-item .icon {
-    height: 100px;
-    width: 100px;
-  }
-  #contact .contact-item .icon img {
-    object-fit: contain;
-  }
-  #contact .contact-item .contact-info {
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
-  }
-  /* End contact  */
 }
-/* End Media Query For Tablet */
 
-/* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-  /* header */
   #header .hamburger {
     display: none;
   }
@@ -661,11 +611,9 @@ p {
   #header .nav-list ul a:after {
     display: none;
   }
-  /* End header */
 
   #services .service-bottom .service-item {
     flex-basis: 22%;
     margin: 1.5%;
   }
 }
-/* End  Media Query For Desktop */
