@@ -1,4 +1,3 @@
-// Smooth scrolling when clicking on anchor links
 $(document).ready(function () {
     $("a").on('click', function (event) {
       if (this.hash !== "") {
