@@ -1,5 +1,5 @@
-/*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&family=Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -23,7 +23,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #121;
 }
 
 /* all similar content styling codes */
@@ -41,7 +41,7 @@ section {
 .projects,
 .contact,
 footer {
-  font-family: "Poppins", sans-serif;
+  font-family: "Spartan", sans-serif;
 }
 .about .about-content,
 .services .serv-content,
@@ -56,10 +56,11 @@ section .title {
   position: relative;
   text-align: center;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 800;
+  letter-spacing: -0.03em;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Spartan", sans-serif;
 }
 section .title::before {
   content: "";
@@ -76,7 +77,7 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: crimson;
+  color: #ff6b6b;
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
@@ -88,12 +89,12 @@ section .title::after {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Spartan", sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
   padding: 15px 0;
-  background: crimson;
+  background: #ff6b6b;
 }
 .navbar .max-width {
   display: flex;
@@ -106,7 +107,7 @@ section .title::after {
   font-weight: 600;
 }
 .navbar .logo a span {
-  color: crimson;
+  color: #ff6b6b;
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
@@ -125,10 +126,10 @@ section .title::after {
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: crimson;
+  color: #ff6b6b;
 }
 .navbar.sticky .menu li a:hover {
-  color: #fff;
+  color: #ffee6b;
 }
 
 /* menu btn styling */
@@ -142,7 +143,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: crimson;
+  background: #ff6b6b;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -169,14 +170,13 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("https://lh3.googleusercontent.com/pw/ADCreHcCygJOFxgLklpn02rY3EcJakFj6_JWNsB6LysQpnHDLoXY2SfV6SCjS47EHuaDLimxXyCKd7xTEVes3GhzvTxKToUZTlub2-plBp0ZDiW7erRrI2V_=w2400")
-    no-repeat center;
+  background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=2620&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   height: 100vh;
   color: #fff;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Spartan", sans-serif;
 }
 .home .max-width {
   width: 100%;
@@ -189,38 +189,39 @@ section .title::after {
   font-size: 27px;
 }
 .home .home-content .text-2 {
-  font-size: 75px;
+  font-size: 5em;
   font-weight: 600;
   margin-left: -3px;
+  letter-spacing: -4px;
 }
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
 .home .home-content .text-3 span {
-  color: crimson;
+  color: #ff6b6b;
   font-weight: 500;
 }
 .home .home-content a {
   display: inline-block;
-  background: crimson;
+  background: #ff6b6b;
   color: #fff;
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
   font-weight: 400;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid #ff6b6b;
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
-  color: crimson;
+  color: #ff6b6b;
   background: none;
 }
 
 /* about section styling */
 .about .title::after {
-  content: "who i am";
+  content: "Identity";
 }
 .about .about-content .left {
   width: 45%;
@@ -240,25 +241,25 @@ section .title::after {
   margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-  color: crimson;
+  color: #ff6b6b;
 }
 .about .about-content .right p {
   text-align: justify;
 }
 .about .about-content .right a {
   display: inline-block;
-  background: crimson;
+  background: #ff6b6b;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid #ff6b6b;
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color: crimson;
+  color: #ff6b6b;
   background: none;
 }
 
@@ -275,7 +276,6 @@ section .title::after {
 .services .title::after,
 .projects .title::after {
   background: #111;
-  content: "what i provide";
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
@@ -287,7 +287,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .services .serv-content .card:hover {
-  background: crimson;
+  background: #ff6b6b;
 }
 .services .serv-content .card .box {
   transition: all 0.3s ease;
@@ -297,7 +297,7 @@ section .title::after {
 }
 .services .serv-content .card i {
   font-size: 50px;
-  color: crimson;
+  color: #ff6b6b;
   transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i {
@@ -312,7 +312,7 @@ section .title::after {
 /* skills section styling */
 
 .skills .title::after {
-  content: "What I have learnt:";
+  content: "software.";
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -327,18 +327,18 @@ section .title::after {
 }
 .skills .skills-content .left a {
   display: inline-block;
-  background: crimson;
+  background: #ff6b6b;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid #ff6b6b;
   transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
-  color: crimson;
+  color: #ff6b6b;
   background: none;
 }
 .skills .skills-content .right .bars {
@@ -366,7 +366,7 @@ section .title::after {
   height: 100%;
   left: 0;
   top: 0;
-  background: crimson;
+  background: #ff6b6b;
 }
 .skills-content .right .html::before {
   width: 10%;
@@ -386,7 +386,7 @@ section .title::after {
 
 /* projects section styling */
 .projects .title::after {
-  content: "some of my projects.";
+  content: "projects.";
 }
 .projects .carousel .card {
   background: #222;
@@ -397,7 +397,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .projects .carousel .card:hover {
-  background: crimson;
+  background: #ff6b6b;
 }
 .projects .carousel .card .box {
   display: flex;
@@ -419,7 +419,7 @@ section .title::after {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid crimson;
+  border: 5px solid #ff6b6b;
   transition: all 0.3s ease;
 }
 .projects .carousel .card:hover img {
@@ -435,7 +435,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid crimson !important;
+  border: 2px solid #ff6b6b !important;
   transition: all 0.3s ease;
 }
 .owl-dot.active {
@@ -444,12 +444,12 @@ section .title::after {
 }
 .owl-dot.active,
 .owl-dot:hover {
-  background: crimson !important;
+  background: #ff6b6b !important;
 }
 
 /* contact section styling */
 .contact .title::after {
-  content: "get in touch";
+  content: "get in touch.";
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -475,7 +475,7 @@ section .title::after {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: crimson;
+  color: #ff6b6b;
 }
 .contact .contact-content .info .head {
   font-weight: 500;
@@ -508,7 +508,7 @@ section .title::after {
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Spartan", sans-serif;
   transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
@@ -534,12 +534,12 @@ section .title::after {
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: #ff6b6b;
+  border: 2px solid #ff6b6b;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  color: crimson;
+  color: #ff6b6b;
   background: none;
 }
 /* footer section styling */
@@ -548,13 +548,11 @@ footer {
   padding: 15px 23px;
   color: #fff;
   text-align: center;
+  transition: all 0.5s;
 }
-footer span a {
-  color: crimson;
-  text-decoration: none;
-}
-footer span a:hover {
-  text-decoration: underline;
+footer:hover {
+  color: #ff6b6b;
+  background: #fff;
 }
 
 /* responsive media query start */
@@ -584,7 +582,7 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #111;
+    background: #6f6f6f;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
